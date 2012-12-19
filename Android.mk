@@ -1,3 +1,3 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),p500)
+ifneq ($(filter p500,$(TARGET_DEVICE)),)
 include $(call first-makefiles-under,$(call my-dir))
 endif
